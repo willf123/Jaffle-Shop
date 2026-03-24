@@ -2,7 +2,8 @@ version: 2
 
 sources:
   - name: jaffle_shop
-    database: dbt-tutorial
+    database: crafty-circlet-491120-t3
+    schema: dbt_wfiore
     tables:
       - name: customers
       - name: orders
