@@ -5,5 +5,5 @@ sources:
     database: crafty-circlet-491120-t3
     schema: dbt_wfiore
     tables:
-      - name: customers
-      - name: orders
+      - name: raw_customers
+      - name: raw_orders

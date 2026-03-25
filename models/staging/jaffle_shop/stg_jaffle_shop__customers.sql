@@ -2,19 +2,17 @@ with
 
 source as (
 
-    select * from {{ source('jaffle_shop', 'customers') }}
+    select * from {{ source('jaffle_shop', 'raw_customers') }}
 
 ),
 
 renamed as (
 
     select
-        customer_id,
+        id as customer_id,
         first_name,
-        last_name,
-        first_order_date,
-        most_recent_order_date,
-        number_of_orders
+        last_name
+        
 
     from source
 
